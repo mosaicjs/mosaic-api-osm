@@ -1,0 +1,31 @@
+{
+  "name": "mosaic-api-osm",
+  "version": "0.1.0",
+  "description": "Very light-weight state management library",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec ./test/index.js",
+    "bump": "npm test && npm version patch && git push && git push --tags && npm publish",
+    "bump-minor": "npm run bump && npm version minor && git push && git push --tags && npm publish",
+    "commit": "npm test && git commit -a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosaicjs/mosaic-api-osm.git"
+  },
+  "keywords": [],
+  "author": "Mikhail Kotelnikov <mikhail.kotelnikov@ubimix.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mosaicjs/mosaic-api-osm/issues"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {},
+  "homepage": "https://github.com/mosaicjs/mosaic-api-osm#readme",
+  "directories": {
+    "test": "test"
+  }
+}
