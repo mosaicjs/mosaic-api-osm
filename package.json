@@ -1,7 +1,7 @@
 {
   "name": "mosaic-api-osm",
   "version": "0.1.0",
-  "description": "Very light-weight state management library",
+  "description": "A rest API giving remote access to OSM entities",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec ./test/index.js",
